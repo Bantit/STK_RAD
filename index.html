@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>STK_RAD</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.typekit.net/eae1hqt.css">
+<script src="restaurants.js"></script>
+</head>
+
+<body>
+<div class="container">
+  <img src="images/Randy.png" alt="" width="1200" height="700" id="Image1"/>- 
+
+	<div><h1>
+		Starkville <br>
+		Resturant <br></h1></div>
+		<div>
+		<h2>Randomizer</h2>
+	</div>
+</div>
+<div class="menu">
+	<li class="tek"><a href="">HOME</a><div class="meback">&nbsp;</div></li>
+	
+	<li class="tek"><a href="">MAP</a><div class="meback">&nbsp;</div></li>
+	
+	<li class="tek"><a href="">INFO</a><div class="meback">&nbsp;</div></li>
+	
+	<li class="tek"><a href="">COMING</a><div class="meback">&nbsp;</div></li>
+	
+</div>
+	
+<div class="explainer">
+	<h1>Randy says Welcome!</h1>
+		<div class="welrad"> 
+			<p>"Welcome to Randy's Randomizer! Hey there, foodies and flavor-seekers! I'm Randy, the bulldog with an unquenchable appetite for all things delicious. Whether you're a fellow Mississippian or a traveler passing through, you're in for a treat. Join me as I sniff out the most mouthwatering dishes Starkville has to offer. From cozy diners to upscale eateries, I've got the insider scoop on where to satisfy your cravings. So, fasten your seatbelts and get ready for a foodie journey like no other. Explore Starkville's finest flavors through my discerning nose.<br> Let's eat our way through Starkville!" <br> <br>
+			Click the Randomizer below or go to the "info" tab to find something more specifc.</p>	
+	
+	
+	
+	</div>
+	
+	
+	
+	
+	</div>
+<div class="randomizer">
+	<button id="randomizerButton" class="rbutton"><h4>Randomize Restaurant</h4></button>
+  		<div id="result"></div>
+
+  <script>
+    function randomize() {
+      var randomIndex = Math.floor(Math.random() * restaurants.length);
+      var randomRestaurant = restaurants[randomIndex];
+      var resultElement = document.getElementById("result");
+      resultElement.textContent = randomRestaurant;
+    }
+
+    var randomizerButton = document.getElementById("randomizerButton");
+    randomizerButton.addEventListener("click", randomize);
+  </script>
+	</div>
+<div class="extra"><h1>Extra info</h1>
+	<p>This is huge work in progress, there are plenty of features and updates in the future as I start to understand coding and how to creativly show that within this website. Feel Free to leave me suggestion and comments via twitter at "Twittisthename". Anyways I hope that you get some use out of the randomeizer and maybe save you some extra time eating rather than thinking. </p>
+	</div>
+<div class="footer">
+	<li>Tucker Witt</li>
+	<li>Twittisthename</li>
+	<li>@ Tucker Witt 2023</li>
+</div>
+</body>
+</html>
