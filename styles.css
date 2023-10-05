@@ -34,14 +34,15 @@ img {
     width: 20%;
     height: auto;
     position: relative;
+    display: none;
 }
 .container h1 {
     font-family: "acier-bat-noir", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #DBA915;
+    color: #987611;
     position: absolute;
-    left: 30%;
+    left: 20%;
     top: 2.5%;
     font-size: 322%;
     transform: rotatez(-25deg)
@@ -51,9 +52,9 @@ img {
     font-family: "acier-bat-noir", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #DBA915;
+    color: #987611;
     position: absolute;
-    left: 47%;
+    left: 37%;
     top: 20%;
     font-size: 501%;
 }
@@ -276,12 +277,13 @@ img {
     width: auto;
     height: 130%;
     position: relative;
+    display: none;
 }
 .container h1 {
     font-family: "acier-bat-noir", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #DBA915;
+    color: #987611;
     position: absolute;
     left: 30%;
     top: 2.5%;
@@ -293,7 +295,7 @@ img {
     font-family: "acier-bat-noir", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #DBA915;
+    color: #987611;
     position: absolute;
     left: 47%;
     top: 20%;
@@ -578,7 +580,7 @@ img {
     font-family: "acier-bat-noir", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #DBA915;
+    color: #987611;
     position: absolute;
     left: 10%;
     top: 5%;
@@ -590,7 +592,7 @@ img {
     font-family: "acier-bat-noir", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #DBA915;
+    color: #987611;
     position: absolute;
     left: 30%;
     top: 45%;
