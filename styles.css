@@ -17,7 +17,7 @@ img {
     .sidenav, .hamburger {
 		display: none;
 }
-	.container, .menu, .randomizer, .extra, .footer, .explainer {
+	.container, .menu, .randomizer, .extra, .footer, .explainer, .speRes, .found  {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -167,7 +167,6 @@ img {
 .randomizer {
     height: 530px;
     background-color: #75D3FA;
-    ;
     height: 348px; /* Adjust the height as needed */
     margin-top: 0;
     margin-right: auto;
@@ -207,6 +206,17 @@ img {
     border-top-right-radius: 18px;
     font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 }
+
+.speRes {
+    height: 400px;
+    background-color:#75D3FA;
+}
+
+.found {
+    height: 400px;
+    background-color:#75D3FA;
+}
+
 .footer {
     height: 100px;
     background-color: #955CFA;	

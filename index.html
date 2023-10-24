@@ -7,7 +7,8 @@
 <!-- <link href="styles.css" rel="stylesheet" type="text/css"> -->
 <link rel="stylesheet" type="text/css" href="styles.css">
 <link rel="stylesheet" href="https://use.typekit.net/eae1hqt.css">
-<script src="restaurants.js"></script>
+<!-- <script src="restaurants.js"></script> -->
+<script src="res_push.js"></script>
 </head>
 
 <body>
@@ -46,7 +47,7 @@
 	
 </div>	
 	</div>
-<div class="randomizer">
+<!-- <div class="randomizer">
 	<button id="randomizerButton" class="rbutton"><h4>Randomize Restaurant</h4></button>
   		<div id="result"></div>
 
@@ -61,8 +62,27 @@
     var randomizerButton = document.getElementById("randomizerButton");
     randomizerButton.addEventListener("click", randomize);
   </script>
-	</div>
-	
+	</div> -->
+
+<div class="speRes">
+
+	<select id="restaurantCategory">
+        <option value="Italian">Italian</option>
+        <option value="Downtown">Downtown</option>
+        <option value="Locals">Locals</option>
+        <option value="Cheap">Cheap</option>
+    </select>
+    
+    <button onclick="pickRandomRestaurant()">Pick a Random Restaurant</button>
+</div>
+
+<div class="found">
+    <p id="randomRestaurant"></p>
+    <p id="restaurantInfo"></p>
+</div>
+
+</div>
+
 <div class="footer">
 	<li>Tucker Witt</li>
 	<li>Twittisthename</li>
