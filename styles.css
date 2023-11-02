@@ -38,21 +38,38 @@ img {
 }
 .container h1 {
     font-family: "acier-bat-noir", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
-    color: #987611;
+    color: #6237AD;
     position: absolute;
     left: 20%;
     top: 2.5%;
     font-size: 322%;
-    transform: rotatez(-25deg)
+    transform: rotatez(-25deg);
 }
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 21.5%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    width: 26%; /* Set width of the shape */
+    height: 50%; /* Set height of the shape */
+    background-color: #DBA915;
+    ; /* Set background color for the shape */
+    border-radius: 10px; /* Optional: Add rounded corners to the shape */
+    z-index: 0; /* Place the shape behind the text */
+    transform: rotatez(-25deg);
+    border-radius: 40px;
+}
+
 
 .container h2 {
     font-family: "acier-bat-noir", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #987611;
+    color: #DBA915;
     position: absolute;
     left: 37%;
     top: 20%;
@@ -208,13 +225,54 @@ img {
 }
 
 .speRes {
-    height: 400px;
-    background-color:#75D3FA;
+    display: flex;
+    height: 200px;
+    background-color:#5A95AD;
+    justify-content: center;
+    align-items: center;
 }
 
 .found {
     height: 400px;
     background-color:#75D3FA;
+}
+
+
+.speRes #restaurantCategory {
+    font-size: 16px;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+button {
+    font-size: 16px;
+    padding: 20px 40px;
+    background-color: #DBA915;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+button:hover {
+    background-color: #6237AD;
+}
+
+.found h3 {
+    font-size: 2vw;
+    font-family: "acier-bat-noir", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .footer {
