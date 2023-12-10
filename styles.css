@@ -2,9 +2,10 @@
 /* CSS Document */
 
 body{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
    background-color: #75D3FA
+
 }
 
 img {
@@ -66,7 +67,7 @@ img {
 
 
 .container h2 {
-    font-family: "acier-bat-noir", sans-serif;
+    font-family: "acier-bat-solid", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: #DBA915;
@@ -265,7 +266,7 @@ button:hover {
 
 .found h3 {
     font-size: 2vw;
-    font-family: "acier-bat-noir", sans-serif;
+    font-family: "acier-bat-solid", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -282,9 +283,9 @@ p {
 .randomizer #result {
     display: -webkit-box;
     font-size: 64px;
-    font-family: "acier-bat-noir", sans-serif;
-    font-weight: bold;
-    text-align: center;
+    font-family: "acier-bat-solid", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 	color: #C42224;
     max-width: 100%;
     overflow: hidden;
@@ -302,7 +303,7 @@ p {
     position: relative;
     top: 6%;
     left: 31%;
-    font-family: "acier-bat-noir", sans-serif;
+    font-family: "acier-bat-solid", sans-serif;
     font-weight: 400;
     font-style: normal;
     padding-left: 16px;
@@ -622,13 +623,11 @@ p {
     margin-left: 50px;
 }
 
-	.container, .menu, .randomizer, .extra, .footer, .explainer {
+.container, .menu, .randomizer, .extra, .footer, .explainer, .speRes, .found {
     width: 100%;
     margin-left: 0px;
     margin-right: 0px;
     position: relative;
-    padding-left: 3%;
-    padding-right: 3%;
 }
 
 .container {
@@ -820,6 +819,7 @@ p {
     border-top-right-radius: 18px;
     font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 }
+/* New Version */
 .footer {
     height: 200px;
     background-color: #955CFA;	
@@ -846,6 +846,45 @@ p {
     top: 25%;
     overflow-wrap: break-word;
 }
+/* New Version */
+.speRes {
+    display: flex;
+    height: 200px;
+    background-color:#5A95AD;
+    justify-content: center;
+    align-items: center;
+    padding-right: 3%;
+    padding-left: 3%;
+    width: auto;
+}
+/* New Version */
+.found {
+    height: 373px;
+    background-color:#75D3FA;
+    padding-right: 3%;
+    padding-left: 3%;
+    width: auto;
+}
+
+.found h3 {
+    font-size: 6vw;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+/* New Version */
+.speRes #restaurantCategory {
+    font-size: 2wv;
+    padding: 3%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 5%;
+    padding-right: 3%;
+    padding-left: 3%;
+    overflow-wrap: break-word;
+}
 
 .randomizer #randomizerButton {
     margin-left: 0%;
@@ -861,6 +900,25 @@ p {
     padding-bottom: 2px;
     padding-top: 3px;
     text-align: center;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+/* New Version */
+button {
+    font-size: 2.5vw;
+    padding: 4% 8%;
+    background-color: #DBA915;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    position: relative;
+    top: 5%;
+    padding-right: 3%;
+    padding-left: 3%;
 }
 
 .rbutton {
@@ -873,3 +931,4 @@ p {
 }
 
 }
+

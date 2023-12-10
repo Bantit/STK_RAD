@@ -305,7 +305,7 @@ var restaurantData = [
         info: "Info is being Updated in the next update, hopefully"
     },
     {
-        name: "Hotel Chester ?",
+        name: "Hotel Chester",
         category: "Master",
         info: "Info is being Updated in the next update, hopefully"
     },
@@ -546,6 +546,7 @@ var restaurantData = [
     }
 ];
 
+// above is every restaurant as of December 9, 2023
     
 
 function pickRandomRestaurant() {
