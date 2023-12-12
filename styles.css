@@ -324,14 +324,60 @@ p {
 
 @media only screen and (min-width: 601px) and (max-width: 1199px) {
 
-    .sidenav, .hamburger {
-		display: none;
+    .hamburger {
+		font-size: 45px;
+		position: fixed;
+		top: 10px;
+		left: 10px;
+		z-index: 100;
 	}
+	
+	.hambuger:hover {
+  		color:#FFBD00;    		
+	}
+	
+	/* The side navigation menu */
+    .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 150; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
 
-	.container, .menu, .randomizer, .extra, .footer, .explainer {
+/* The navigation menu links */
+    .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+    .sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.container, .menu, .randomizer, .extra, .footer, .explainer, .speRes, .found, .disclaimer {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0px;
+    margin-right: 0px;
     position: relative;
 }
 
@@ -344,35 +390,36 @@ p {
 
 .container img {
     width: auto;
-    height: 130%;
+    height: 100%;
     position: relative;
     display: none;
 }
 .container h1 {
-    font-family: "acier-bat-noir", sans-serif;
+    font-family: "acier-bat-solid", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #987611;
+    color: #DBA915;
     position: absolute;
-    left: 30%;
-    top: 2.5%;
-    font-size: 322%;
+    left: 10%;
+    top: 5%;
+    font-size: 5.5vh;
     transform: rotatez(-25deg)
 }
 
 .container h2 {
-    font-family: "acier-bat-noir", sans-serif;
+    font-family: "acier-bat-solid", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #987611;
+    color: #DBA915;
     position: absolute;
-    left: 47%;
+    left: 30%;
     top: 20%;
-    font-size: 501%;
+    font-size: 12vh;
 }
 
 
 .menu {
+    display: none;
     background-color: #6237AD;
     position: relative;
     height: 90px;
@@ -386,6 +433,7 @@ p {
 
 
 .menu li {
+    display: none;
     float: left;
     width: 25%;
     list-style-type: none;
@@ -404,7 +452,7 @@ p {
 .menu a:link, .menu a:visited {
     color: #FAD669;
     text-align: center;
-    font-size: 45px;
+    font-size: 2vh;
     font-family: "acier-bat-noir", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -434,7 +482,7 @@ p {
     color: #AC6D04;
    
     text-align: center;
-    font-size: 45px;
+    font-size: 2vh;
     font-family: "acier-bat-noir", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -481,16 +529,15 @@ p {
 }
 
 .randomizer {
-    height: 490px;
+    height: 550px;
     background-color: #75D3FA;
     height: 348px; /* Adjust the height as needed */
     margin-top: 0;
     margin-right: auto;
     margin-left: auto;
     position: relative;
-    top: -60%;
-	width: 100%;
-    
+    padding-left: 2%;
+    padding-right: 2%
 }
 
 .extra {
@@ -523,32 +570,94 @@ p {
     border-top-right-radius: 18px;
     font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 }
+/* New Version */
 .footer {
     height: 200px;
     background-color: #955CFA;	
 	width: 100%;
     height: auto;
 }
+
+.footer li {
+    color: #DBA915;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
 .randomizer #result {
     display: -webkit-box;
-    font-size: 2.3vw;
+    font-size: 1.5rem;
+    line-height: 1.5; /* Unitless line height */
     font-family: "acier-bat-noir", sans-serif;
     font-weight: bold;
     text-align: center;
 	color: #C42224;
-    max-width: 100%;
+    max-width: 80%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    resize: both;
+    max-width: 100%;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     position: relative;
     top: 25%;
+    overflow-wrap: break-word;
+}
+/* New Version */
+.speRes {
+    display: flex;
+    height: 200px;
+    background-color:#5A95AD;
+    justify-content: center;
+    align-items: center;
+    padding-right: 3%;
+    padding-left: 3%;
+    width: auto;
+}
+/* New Version */
+.found {
+    height: 373px;
+    background-color:#75D3FA;
+    padding-right: 3%;
+    padding-left: 3%;
+    width: auto;
+}
+
+.found h3 {
+    font-size: 6vw;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+.disclaimer {
+    background-color:#75D3FA;
+    padding-right: 3%;
+    padding-left: 3%;
+    width: auto;
+}
+
+.disclaimer p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5 wv;
+}
+
+/* New Version */
+.speRes #restaurantCategory {
+    font-size: 2wv;
+    padding: 3%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 5%;
+    padding-right: 3%;
+    padding-left: 3%;
+    overflow-wrap: break-word;
 }
 
 .randomizer #randomizerButton {
     margin-left: 0%;
-    font-size: 2.2vw;
+    font-size: 3vw;
     position: relative;
     top: 6%;
     left: 31%;
@@ -559,6 +668,26 @@ p {
     padding-right: 16px;
     padding-bottom: 2px;
     padding-top: 3px;
+    text-align: center;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+/* New Version */
+button {
+    font-size: 2.5vw;
+    padding: 4% 8%;
+    background-color: #DBA915;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    position: relative;
+    top: 5%;
+    padding-right: 3%;
+    padding-left: 3%;
 }
 
 .rbutton {
