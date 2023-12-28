@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>STK_RAD</title>
+<!-- <link href="styles.css" rel="stylesheet" type="text/css"> -->
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="https://use.typekit.net/eae1hqt.css">
+<link rel="stylesheet" href="https://use.typekit.net/eae1hqt.css">
+<!-- <script src="restaurants.js"></script> -->
+<script src="res_push.js"></script>
+</head>
+
+<body>
+
+
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#"><p>HOME</p></a>
+		<a href="#"><p>MAP</p></a>
+		<a href="#"><p>INFO</p></a>
+		<a href="#"><p>COMING SOON</p></a>
+	  </div>
+	  
+	  <!-- Use any element to open the sidenav -->
+	  <span onclick="openNav()" class="hamburger">&#9776;</span>	
+
+
+<div class="container">
+  <img src="images/Randy.png" alt="" width="1200" height="700" id="Image1"/>- 
+
+	<div><h1>
+		Starkville <br>
+		Resturant <br></h1></div>
+		<div>
+		<h2>Randomizer</h2>
+	</div>
+</div>
+<div class="menu">
+	<li class="tek"><a href="">HOME</a><div class="meback">&nbsp;</div></li>
+	
+	<li class="tek"><a href="">MAP</a><div class="meback">&nbsp;</div></li>
+	
+	<li class="tek"><a href="">INFO</a><div class="meback">&nbsp;</div></li>
+	
+	<li class="tek"><a href="">COMING</a><div class="meback">&nbsp;</div></li>
+	
+</div>	
+	</div>
+
+<div class="speRes">
+
+	<select id="restaurantCategory">
+		<option value=""><p>Master</p></option>
+		<option value="Mexican">Mexican</option>
+		<option value="Italian">Italian</option>
+		<option value="Asian">Asian</option>
+		<option value="American">American</option>
+		<option value="B&L">Breakfast & Lunch</option>
+		<option value="L/D/S">Lunch/Dinner (Sit down Only)</option>
+		<option value="L/D/T">Lunch/Dinner (Takeout and Sit Down)</option>
+		<option value="ADa">All Day Long</option>
+		<option value="SoSa">Soups & Sandwiches</option>
+		<option value="Burgers">Burgers</option>
+		<option value="Pizza">Pizza</option>
+		<option value="Cajun">Cajun</option>
+		<option value="Breakfast">Breakfast</option>
+		<option value="Barbeque">Barbeque</option>
+		<option value="Salad">Salad</option>
+		<option value="Chicken">Chicken</option>
+		<option value="Desserts">Desserts</option>
+		<option value="Coffee">Coffee & Tea</option>
+		<option value="No">North</option>
+		<option value="Sou">South</option>
+		<option value="E/C">East/Campus</option>
+		<option value="West">West</option>
+		<option value="District">District</option>	
+		<option value="Spec">Specials</option>
+		<option value="Steaks">Steaks</option>
+		<option value="FSB">Fully Stocked Bar</option>
+		<option value="LS">Limited Selection</option>
+		<option value="Seafood">Seafood</option>
+		<option value="Soon"></option>
+    </select>
+    
+
+    <button onclick="pickRandomRestaurant()">Pick a Random Restaurant</button>
+</div>
+
+<div class="found">
+    <h3 id="randomRestaurant"></h3>
+    <p id="restaurantInfo"></p>
+</div>
+<div class="disclaimer">
+	<p>Disclaimer: This site was made with the intention to simplify the Restaurant selection process in Starkville Mississippi without any biased.
+		I have tried to get every restaurant within Starkvile area, but if you find that there is a restaurant missing please send a DM to @Twittisthename on X/Twitter.   </p>
+</div>
+
+<div class="footer">
+	<li><p>Tucker Witt</p></li>
+	<li><a href="https://twitter.com/TwittIsTheName">TwittIsTheName</a></li>
+	<li><p>@ Tucker Witt 2023</p></li>
+</div>
+
+<script>
+	function openNav() {
+	  document.getElementById("mySidenav").style.width = "250px";
+	}
+	
+	function closeNav() {
+	  document.getElementById("mySidenav").style.width = "0";
+	}
+	</script>
+
+</body>
+</html>
