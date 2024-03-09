@@ -21,15 +21,16 @@
 <script src="res_push.js"></script>
 </head>
 
-<body>
+<body onload="startTime()">
 
+	
 
 	<div id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<a href="#"><p>HOME</p></a>
-		<a href="#"><p>FAQ</p></a>
+		<!-- <a href="#"><p>FAQ</p></a> -->
 		<a href="#"><p>INFO</p></a>
-		<a href="#"><p>CITIES</p></a>
+		<!-- <a href="#"><p>CITIES</p></a> -->
 	  </div>
 	  
 	  <!-- Use any element to open the sidenav -->
@@ -39,28 +40,35 @@
 <div class="container">
   <img src="images/Randy.png" alt="" width="1200" height="700" id="Image1"/>- 
 
-	<div><h1>
-		Starkville <br>
-		Resturant <br></h1></div>
-		<div>
-		<h2>Randomizer</h2>
+	<div>
+		<h1>Starkville Randomizer</h1>
+		
 	</div>
 </div>
 <div class="menu">
+	<li class="tek"><a href=""></a><div class="meback">&nbsp;</div></li>
+
 	<li class="tek"><a href="">HOME</a><div class="meback">&nbsp;</div></li>
 	
-	<li class="tek"><a href="">MAP</a><div class="meback">&nbsp;</div></li>
 	
 	<li class="tek"><a href="">INFO</a><div class="meback">&nbsp;</div></li>
 	
-	<li class="tek"><a href="">COMING</a><div class="meback">&nbsp;</div></li>
+	<li class="tek"><a href=""></a><div class="meback">&nbsp;</div></li>
 	
 </div>	
 	</div>
 
-<div class="speRes">
+<div class="time", id="txt">
+</div>
 
-	<select id="restaurantCategory">
+
+	<div class="resbut">
+		<button onclick="pickRandomRestaurant()">Pick a Random Restaurant</button>
+	</div>
+
+<div class="speRes">
+	<div>
+		<select id="restaurantCategory">
 		<option value=""><p>Master</p></option>
 		<option value="Mexican">Mexican</option>
 		<option value="Italian">Italian</option>
@@ -92,15 +100,17 @@
 		<option value="Seafood">Seafood</option>
 		<option value="Soon"></option>
     </select>
-    
-
-    <button onclick="pickRandomRestaurant()">Pick a Random Restaurant</button>
+	</div>
 </div>
 
 <div class="found">
     <h3 id="randomRestaurant"></h3>
+	</div>
+
+<!-- <div class="foundinfo">
     <p id="restaurantInfo"></p>
-</div>
+</div> -->
+
 <div class="disclaimer">
 	<p>Disclaimer: This site was made with the intention to simplify the Restaurant selection process in Starkville Mississippi without any biased.
 		I have tried to get every restaurant within Starkvile area, but if you find that there is a restaurant missing please send a DM to @Twittisthename on X/Twitter.   </p>
@@ -111,6 +121,28 @@
 	<li><a href="https://twitter.com/TwittIsTheName">TwittIsTheName</a></li>
 	<li><p>@ Tucker Witt 2023</p></li>
 </div>
+
+<script>
+	function startTime() {
+	  const today = new Date();
+	  let h = today.getHours();
+	  let m = today.getMinutes();
+	  let s = today.getSeconds();
+	  m = checkTime(m);
+	  s = checkTime(s);
+	  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+	  setTimeout(startTime, 1000);
+	}
+	
+	function checkTime(i) {
+	  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+	  return i;
+	}
+	</script>
+	
+
+
+
 
 <script>
 	function openNav() {

@@ -564,7 +564,7 @@ function pickRandomRestaurant() {
     if (filteredRestaurants.length > 0) {
         var randomIndex = Math.floor(Math.random() * filteredRestaurants.length);
         var selectedRestaurant = filteredRestaurants[randomIndex];
-        document.getElementById("randomRestaurant").textContent = "Random Restaurant: " + selectedRestaurant.name;
+        document.getElementById("randomRestaurant").textContent =selectedRestaurant.name;
         document.getElementById("restaurantInfo").textContent = "Information: " + selectedRestaurant.info;
     } else {
         document.getElementById("randomRestaurant").textContent = "No restaurants in the selected category.";
