@@ -4,7 +4,7 @@
 body{
     margin: 0;
     padding: 0;
-   background-color: #75D3FA
+   background-color: #fff1db
 
 }
 
@@ -18,7 +18,7 @@ img {
     .sidenav, .hamburger {
 		display: none;
 }
-	.container, .menu, .time, .randomizer, .extra, .footer, .explainer, .resbut, .speRes, .found, .foundinfo, .disclaimer  {
+	.container, .menu, .time, .randomizer, .extra, .footer, .explainer, .resbut, .speRes, .plate, .found, .foundinfo, .disclaimer  {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -26,31 +26,36 @@ img {
 }
 
 .container {
-    background-color: #5A95AD;
-    height: 200px;
-        
+    background-color: #e66819;
+    height: 240px;
+    display: block;
+    /* align-content: center;
+    justify-content: center; */
 }
 
 .container img {
     width: 20%;
     height: auto;
-    position: relative;
-    display: none;
+    position: absolute;
+    left: 39%;
+    top: 28%;
+    z-index: 1000;
 }
+
 .container h1 {
     font-family: "acier-bat-noir", sans-serif;
     font-weight: 600;
     font-style: normal;
-    color: #6237AD;
+    color: #fff1db;
     position: absolute;
-    left: 20%;
-    top: 2.5%;
-    font-size: 322%;
+    left: 15%;
+    font-size: 500%;
+    top: -15%;
 }
 
 
 .menu {
-    background-color: #6237AD;
+    background-color: #487355;
     position: relative;
     height: 90px;
     position: -webkit-sticky; /* Safari */
@@ -64,7 +69,7 @@ img {
     float: left;
     width: 25%;
     list-style-type: none;
-    background-color: #6237AD;
+    background-color: #487355;
     padding-bottom: 7%;
     text-align: center;
     height: 22%;
@@ -77,7 +82,7 @@ img {
 
 
 .menu a:link, .menu a:visited {
-    color: #FAD669;
+    color: #fff1db;
     text-align: center;
     font-size: 45px;
     font-family: "acier-bat-noir", sans-serif;
@@ -106,7 +111,7 @@ img {
 }
 
 .menu a:hover, .menu a:active {
-    color: #AC6D04;
+    color: #21f47d;
    
     text-align: center;
     font-size: 45px;
@@ -134,7 +139,7 @@ img {
 
 .randomizer {
     height: 530px;
-    background-color: #75D3FA;
+    background-color: #fff1db;
     height: 348px; /* Adjust the height as needed */
     margin-top: 0;
     margin-right: auto;
@@ -156,12 +161,15 @@ img {
     justify-content: center;
     align-content: center;
     margin: 40px;
+    font-family: "acier-bat-solid", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .speRes {
     display: flex;
     height: 100px;
-    background-color:#5A95AD;
+    background-color:#fff1db;
     justify-content: center;
     align-items: center;
 }
@@ -169,7 +177,7 @@ img {
 .found {
     display: block;
     height: 270px;
-    background-color:#75D3FA;
+    background-color:#fff1db;
     justify-content: center;
     align-items: center;
 }
@@ -183,9 +191,9 @@ img {
 }
 
 button {
-    font-size: 16px;
+    font-size: 40px;
     padding: 20px 40px;
-    background-color: #DBA915;
+    background-color: #21f47d;
     color: white;
     border: none;
     border-radius: 5px;
@@ -195,17 +203,34 @@ button {
 }
 
 button:hover {
-    background-color: #6237AD;
+    background-color: #e66819;
 }
 
 .found h3 {
     display: block;
-    font-size: 2vw;
+    font-size: 4vw;
     font-family: "acier-bat-solid", sans-serif;
     font-weight: 400;
     font-style: normal;
     justify-content: center;
     text-align: center;
+    z-index: 2;
+}
+
+.plate {
+    display:block;
+    height: 100px;
+}
+
+.plate img {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    top: -280%;
+    left: 40%;
+    z-index: 0;
 }
 
 .foundinfo {
@@ -224,48 +249,9 @@ button:hover {
 
 .footer {
     height: 100px;
-    background-color: #955CFA;	
-}
-.randomizer #result {
-    display: -webkit-box;
-    font-size: 64px;
-    font-family: "acier-bat-solid", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-	color: #C42224;
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    position: relative;
-    top: 25%;
+    background-color: #e66819;	
 }
 
-.randomizer #randomizerButton {
-    margin-left: 0%;
-    font-size: 40px;
-    position: relative;
-    top: 6%;
-    left: 31%;
-    font-family: "acier-bat-solid", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 2px;
-    padding-top: 3px;
-}
-
-.rbutton {
-    display: block;
-    margin: 0 auto;
-    position: relative;
-	top: 36%;
-    left: 4%;
-	background-color: #DBA915;
-}
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1199px) {
