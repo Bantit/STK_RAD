@@ -811,7 +811,9 @@ button:hover {
     }
 
     .disclaimer {
+        display:flex;
         justify-content: center;
+        
     }
 
     .disclaimer p {
@@ -832,8 +834,9 @@ button:hover {
         position: relative;
         justify-content: center;
         padding-top: 2%;
-        padding-right: 2%;
         margin-right: 2%;
+        position: sitcky;
+        bottom: 0;
     }
     
     .footer li {
