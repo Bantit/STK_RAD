@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+    <head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body onload="startTime()">
+
+	
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html"><p>HOME</p></a>
+            <!-- <a href="#"><p>FAQ</p></a> -->
+            <a href="Info.html"><p>INFO</p></a>
+            <!-- <a href="#"><p>CITIES</p></a> -->
+          </div>
+          
+          <!-- Use any element to open the sidenav -->
+          <span onclick="openNav()" class="hamburger">&#9776;</span>	
+    
+    
+    <div class="container">
+      <img src="images/Cute_Randy.svg" alt="" id="Image1"/> 
+    
+        <div>
+            <h1>Starkville Randomizer</h1>
+            
+        </div>
+    </div>
+    <div class="menu">
+        <li class="tek"><a href=""></a><div class="meback">&nbsp;</div></li>
+    
+        <li class="tek"><a href="index.html">HOME</a><div class="meback">&nbsp;</div></li>
+        
+        
+        <li class="tek"><a href="Info.html">INFO</a><div class="meback">&nbsp;</div></li>
+        
+        <li class="tek"><a href=""></a><div class="meback">&nbsp;</div></li>
+        
+    </div>	
+        </div>
+    
+    <div class="time", id="txt">
+    </div>
+    
+    <div class="infoP">
+        <h3>Info</h3>
+        <p>This project was made out of the convience of picking somewhere to eat when everyone said "I don't Know".
+            While this website is still in early development, having the base idea and ability to work was the number one goal. 
+            If you have and suggestions or questions, DM me on twitter @twittisthename. </p>
+    </div>
+
+
+
+    <script>
+        function startTime() {
+          const today = new Date();
+          let h = today.getHours();
+          let m = today.getMinutes();
+          let s = today.getSeconds();
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+          setTimeout(startTime, 1000);
+        }
+        
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+        }
+        </script>
+        
+    
+    
+    
+    
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+
+
+</body>
+</html>
