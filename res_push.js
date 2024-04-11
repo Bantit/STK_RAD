@@ -549,10 +549,15 @@ var restaurantData = [
         category: "Master, West, Ada, Burgers, Chicken",
         info: "infor is being Updated in the next update, hopfully"
     },
+    {
+        name: "El Rodeo Family Mexican Restaurant",
+        category: "Master, West, L/D/S, Mexican, FSB",
+        info: "Info is being Updated in the next update, hopefully"
+    }
 ];
 
-// above is every restaurant as of December 9, 2023
-// 110 Restaurants
+// above is every restaurant as of April 11, 2024
+// 111 Restaurants
     
 
 function pickRandomRestaurant() {
