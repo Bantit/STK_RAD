@@ -553,11 +553,21 @@ var restaurantData = [
         name: "El Rodeo Family Mexican Restaurant",
         category: "Master, West, L/D/S, Mexican, FSB",
         info: "Info is being Updated in the next update, hopefully"
+    },
+    {
+        name: "Bento Sushi",
+        category: "Master, E/C, L/D/S",
+        info: "Info is being Updated in the next update, hopefully"
+    },
+    {
+        name: "The Older Brother",
+        category: "Master, District, L/D/S, Salad, SoSa, FSB",
+        info: "Info is being Updated in the next update, hopefully"
     }
 ];
 
-// above is every restaurant as of April 11, 2024
-// 111 Restaurants
+// above is every restaurant as of November 11, 2024
+// 113 Restaurants
     
 
 function pickRandomRestaurant() {
