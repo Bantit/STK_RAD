@@ -21,7 +21,7 @@ var restaurantData = [
     },
     {
         name: "Chick-Fil-A Union",
-        category: "Master, E/C, ADa, Chicken, Coffee,, Salad",
+        category: "Master, E/C, ADa, Chicken, Coffee, Salad",
         info: "Info is being Updated in the next update, hopefully"
     },
     {
